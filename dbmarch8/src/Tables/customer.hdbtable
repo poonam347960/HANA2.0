@@ -6,3 +6,4 @@ COLUMN TABLE "Customers" (
 	PRIMARY KEY ("ID") )
 	COMMENT 'Table with Customer data' 
 	
+	
