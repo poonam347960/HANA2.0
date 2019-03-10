@@ -1,0 +1,19 @@
+ID: Project1_march8
+_schema-version: '2.1'
+version: 0.0.1
+modules:
+  - name: dbmarch8
+    type: hdb
+    path: dbmarch8
+    requires:
+      - name: hdi_dbmarch8
+        properties:
+          TARGET_CONTAINER: '~{hdi-container-name}'
+resources:
+  - name: hdi_dbmarch8
+    parameters:
+      config:
+        schema: 347960march8
+    properties:
+      hdi-container-name: '${service-name}'
+    type: com.sap.xs.hdi-container
