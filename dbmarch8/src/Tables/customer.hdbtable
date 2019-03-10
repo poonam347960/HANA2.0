@@ -5,3 +5,4 @@ COLUMN TABLE "Customers" (
 	"COUNTRY" NVARCHAR(256)   COMMENT 'Customer Country',
 	PRIMARY KEY ("ID") )
 	COMMENT 'Table with Customer data' 
+	
