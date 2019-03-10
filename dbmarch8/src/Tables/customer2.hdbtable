@@ -4,4 +4,4 @@ COLUMN TABLE "Customers" (
 	"ACTIVE" TINYINT          COMMENT 'Currently active?',
 	"COUNTRY" NVARCHAR(256)   COMMENT 'Customer Country',
 	PRIMARY KEY ("ID") )
-	COMMENT 'Table with Customer datadata4' 
+	COMMENT 'Table with Customer datadata' 
