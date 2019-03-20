@@ -1,0 +1,21 @@
+FUNCTION "get_po_counts" 
+    RETURNS TABLE ( CREATE_CNT integer,
+			        EID  NVARCHAR(10)
+			      
+			       )
+	LANGUAGE SQLSCRIPT 
+	SQL SECURITY INVOKER AS 
+BEGIN 
+
+po_create_cnt =  SELECT COUNT("PARTNER") AS CREATE_CNT, "PARTNER"  AS EID
+         FROM "PurchaseOrderHeader" 
+         group  by  PARTNER;
+    
+
+
+
+
+RETURN select * from :po_create_cnt;
+
+
+END;
