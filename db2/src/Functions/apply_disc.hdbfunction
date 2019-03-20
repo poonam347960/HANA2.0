@@ -6,7 +6,7 @@ FUNCTION "apply_disc" (
 	SQL SECURITY INVOKER AS
 BEGIN
 /***************************** 
-	Write your function logic git
+	Write your function logic git20march
  *****************************/
     ex_result := :im_price - ( :im_price * :im_discount ); 
 END;
